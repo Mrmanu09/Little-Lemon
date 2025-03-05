@@ -1,0 +1,31 @@
+.Footer {
+    grid-column: 3/11;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    border-top: 1px solid gray;
+    height: 298px;
+    align-items: start;
+    padding-top: 40px;
+}
+
+.Footer img {
+    width: 115px;
+    height: 203px;
+}
+
+.Footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin-top: -20px;
+}
+
+.Footer .Section-Title {
+    color: #495E57;
+
+}
+
+.Footer ul li {
+    margin-bottom: 5px;
+}

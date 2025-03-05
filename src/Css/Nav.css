@@ -1,0 +1,24 @@
+.Nav {
+    list-style: none;
+    grid-column: 3/-1;
+}
+
+.Nav-List {
+    display: flex;
+    gap: 3vw;
+    list-style: none;
+    font-weight: Medium;
+    font-size: 18px;
+    text-wrap: nowrap;
+}
+.Nav-List li .Nav-Link{
+    text-decoration: none;
+}
+
+.Nav-List li .Nav-Link:hover {
+    text-decoration: underline dotted;
+}
+
+.Nav-List li .Nav-Link:visited {
+    color: black;
+}

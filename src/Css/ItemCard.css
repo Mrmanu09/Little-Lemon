@@ -1,0 +1,46 @@
+.Item-Card {
+    width: 264px;
+    height: 476px;
+    display: grid;
+    grid-template-rows: 186px 1fr;
+    row-gap: 0;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, .25);
+}
+
+.Item-Card img {
+    width: 264px;
+    height: 186px;
+    grid-row: 1;
+    object-fit: fill;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 0;
+}
+
+.Item-Details {
+    height: 100%;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 15% 50% 35%;
+    background-color: #EDEFEE;
+    padding: 0 20px;
+}
+
+.Item-Details span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Item-Details span:first-of-type {
+    align-self: start;
+}
+
+.Item-Details span:first-of-type h3:last-of-type {
+    color: #FF7700;
+    text-align: right;
+}
+
+.Item-Details .Card-Text {
+    margin-top: 0;
+    align-self: baseline;
+}

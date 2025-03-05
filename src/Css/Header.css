@@ -1,0 +1,12 @@
+.Header{
+    grid-column: 3 / 11;
+    display: grid;
+    grid-template-columns: subgrid;
+    align-items: center;
+    column-gap: 20px;
+    height: 105px;
+}
+
+.Header img {
+   grid-column: 1/3;
+}

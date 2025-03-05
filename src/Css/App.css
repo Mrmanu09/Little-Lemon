@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  font-family: 'Karla';
+}
+
+h1, .Title {
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  font-size: 64px;
+  color: #F4CE14;
+}
+
+h2, .Sub-Title  {
+  font-family: 'Markazi Text';
+  font-weight: 400;
+  font-size: 40px;
+  color: #EDEFEE;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #F4CE14;
+  border: 1px #F4CE14 solid;
+  border-radius: 16px;
+  border: none;
+  font-weight: 700;
+}
+
+button:hover, select:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px #F4CE14 solid;
+  color: #F4CE14;
+}
+
+.Lead-Text {
+  font-family: 'Karla';
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.Card-Title {
+  font-family: 'Karla';
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.Card-Text {
+  font-family: 'Karla';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Section-Title {
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.Dropdown {
+  width: 100%;
+}
+
+select, input[type="text"] {
+  height: 53px;
+  width: 100%;
+  font-family: 'Karla';
+  font-size: 28px;
+  font-weight: 700;
+  color: #495e57;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+  border-radius: 8px;
+}
+
+select option {
+  font-family: 'Karla';
+  font-size: 22px;
+  font-weight: 700;
+  color: #495e57;
+}
+
+input[type="radio"]{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  accent-color: black;
+}
+
+label, .Form-Label {
+  font-family: 'Karla';
+  font-size: 22px;
+  font-weight: 800;
+  color: #EDEFEE;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.required-asterik {
+  font-weight: 900;
+  color: red;
+  font-size: 24px;
+}
