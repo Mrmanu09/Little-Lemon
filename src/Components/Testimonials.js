@@ -2,7 +2,6 @@ import '../Css/Testimonials.css';
 
 import EmmaPortrait from '../Assets/emma portrait.jpg';
 import MarkPortrait from '../Assets/mark portrait.jpg';
-import PaigePortrait from '../Assets/paige portrait.jpg';
 import JohnPortrait from '../Assets/john portrait.jpg';
 
 import TestimonialCard from "./TestimonialCard";
@@ -19,12 +18,6 @@ var testimonialData = [
         rating: "5",
         quote: "Fast and great service",
         image: MarkPortrait
-    },
-    {
-        name: "Paige W.",
-        rating: "4.5",
-        quote: "Lovely environment with great food!",
-        image: PaigePortrait
     },
     {
         name: "John D.",

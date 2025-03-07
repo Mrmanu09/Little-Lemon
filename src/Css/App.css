@@ -24,8 +24,14 @@ h2, .Sub-Title  {
   color: #EDEFEE;
 }
 
-button {
+.Link-Button {
   width: 200px;
+  height: 50px;
+  border-radius: 16px;
+}
+
+button, input[type="submit"] {
+  width: 100%;
   height: 50px;
   background-color: #F4CE14;
   border: 1px #F4CE14 solid;
@@ -34,11 +40,11 @@ button {
   font-weight: 700;
 }
 
-button:hover, select:hover {
+button:hover, input[type="submit"]:hover, select:hover {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
   background-color: white;
   border: 1px #F4CE14 solid;
   color: #F4CE14;
@@ -72,15 +78,30 @@ button:hover {
   width: 100%;
 }
 
-select, input[type="text"] {
+.valid-select, input[type="text"], .valid-date, input[type="number"] {
   height: 53px;
   width: 100%;
+  overflow: hidden;
   font-family: 'Karla';
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: #495e57;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
   border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.invalid-select, .invalid-date {
+  height: 53px;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Karla';
+  font-size: 24px;
+  font-weight: 700;
+  color: #495e57;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+  border-radius: 8px;
+  border-color: red;
 }
 
 select option {

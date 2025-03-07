@@ -19,12 +19,13 @@
     grid-column: 9/11;
     grid-row: 1/1;
     align-self: center;
+    justify-self: end;
 }
 
 .Highlights .CardSection {
     grid-column: 3/11;
     grid-row: 2/2;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }

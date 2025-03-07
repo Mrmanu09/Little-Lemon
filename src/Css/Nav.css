@@ -1,6 +1,6 @@
 .Nav {
     list-style: none;
-    grid-column: 3/-1;
+    grid-column: 5/11;
 }
 
 .Nav-List {
@@ -10,13 +10,17 @@
     font-weight: Medium;
     font-size: 18px;
     text-wrap: nowrap;
+    justify-content: end;
 }
+
 .Nav-List li .Nav-Link{
     text-decoration: none;
+    color: black;
 }
 
 .Nav-List li .Nav-Link:hover {
     text-decoration: underline dotted;
+    text-underline-offset: 3px;
 }
 
 .Nav-List li .Nav-Link:visited {

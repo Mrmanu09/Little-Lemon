@@ -1,15 +1,23 @@
 .Footer {
-    grid-column: 3/11;
+    grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: subgrid;
     column-gap: 20px;
-    border-top: 1px solid gray;
     height: 298px;
     align-items: start;
-    padding-top: 40px;
+    margin-top: 0;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    color: black;
+    grid-column: 3/11;
+    margin-top: 0;
 }
 
 .Footer img {
+    grid-column: 3/5;
     width: 115px;
     height: 203px;
 }
@@ -19,6 +27,18 @@
     text-align: left;
     padding: 0;
     margin-top: -20px;
+}
+
+#doormat-nav {
+    grid-column: 5/7;
+}
+
+#contact-links {
+    grid-column: 7/9;
+}
+
+#social-links {
+    grid-column: 9/11;
 }
 
 .Footer .Section-Title {

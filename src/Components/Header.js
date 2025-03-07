@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="Header">
             <img alt="Little Lemon Logo" src={logo} width="193.04px" height="54px"/>
-            <Nav/>
+            <Nav id="nav-bar"/>
         </header>
     )
 }
