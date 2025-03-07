@@ -1,9 +1,9 @@
-.Nav {
+nav {
     list-style: none;
     grid-column: 5/11;
 }
 
-.Nav-List {
+nav ul {
     display: flex;
     gap: 3vw;
     list-style: none;
@@ -13,16 +13,16 @@
     justify-content: end;
 }
 
-.Nav-List li .Nav-Link{
+.nav-link {
     text-decoration: none;
     color: black;
 }
 
-.Nav-List li .Nav-Link:hover {
+.nav-link:hover {
     text-decoration: underline dotted;
     text-underline-offset: 3px;
 }
 
-.Nav-List li .Nav-Link:visited {
+.nav-link:visited {
     color: black;
 }

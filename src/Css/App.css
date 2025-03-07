@@ -3,28 +3,28 @@
   font-size: 16px;
 }
 
-.App {
+#app {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   font-family: 'Karla';
 }
 
-h1, .Title {
+h1, .title {
   font-family: 'Markazi Text';
   font-weight: 500;
   font-size: 64px;
   color: #F4CE14;
 }
 
-h2, .Sub-Title  {
+h2, .sub-title  {
   font-family: 'Markazi Text';
   font-weight: 400;
   font-size: 40px;
   color: #EDEFEE;
 }
 
-.Link-Button {
+.link-button {
   width: 200px;
   height: 50px;
   border-radius: 16px;
@@ -50,25 +50,25 @@ button:hover, input[type="submit"]:hover {
   color: #F4CE14;
 }
 
-.Lead-Text {
+.lead-text {
   font-family: 'Karla';
   font-size: 1em;
   font-weight: 500;
 }
 
-.Card-Title {
+.card-title {
   font-family: 'Karla';
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 
-.Card-Text {
+.card-text {
   font-family: 'Karla';
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 
-.Section-Title {
+.section-title {
   font-family: 'Karla';
   font-size: 18px;
   font-weight: 800;

@@ -1,4 +1,4 @@
-.Footer {
+footer {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: subgrid;
@@ -16,13 +16,13 @@ hr {
     margin-top: 0;
 }
 
-.Footer img {
+footer img {
     grid-column: 3/5;
     width: 115px;
     height: 203px;
 }
 
-.Footer ul {
+footer ul {
     list-style: none;
     text-align: left;
     padding: 0;
@@ -41,11 +41,29 @@ hr {
     grid-column: 9/11;
 }
 
-.Footer .Section-Title {
+footer h3{
     color: #495E57;
-
 }
 
-.Footer ul li {
+footer ul li {
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #doormat-nav {
+        display: none;
+    }
+
+    footer img {
+        width: 100;
+        grid-column: 3;
+    }
+
+    #contact-links {
+        grid-column: 4/7;
+    }
+
+    #social-links {
+        grid-column: 7/11;
+    }
 }

@@ -1,31 +1,31 @@
-.Highlights {
+#highlights {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: 20% 80%;
     gap: 20px;
-    height: 761px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.Highlights h1 {
+#highlights h1 {
     grid-column: 3/9;
     grid-row: 1/1;
     align-self: center;
     color: black;
 }
 
-.Highlights button:first-of-type {
+#highlights button:first-of-type {
     grid-column: 9/11;
     grid-row: 1/1;
     align-self: center;
     justify-self: end;
 }
 
-.Highlights .CardSection {
+#card-section {
     grid-column: 3/11;
     grid-row: 2/2;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }

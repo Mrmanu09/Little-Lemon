@@ -12,35 +12,38 @@ var currentSpecials = [
         price: "$12.99",
         description: "In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue. \
         Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.",
-        img: GreekSalad
+        img: GreekSalad,
+        alt: "Close up of our greek salad"
     },
     {
         name: "Bruchetta",
         price: "$5.99",
         description: "In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue. \
         Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.",
-        img: Bruchetta
+        img: Bruchetta,
+        alt: "Our bruchetta served on a plate"
     },
     {
         name: "Lemon Dessert",
         price: "$5.00",
         description: "In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue. \
         Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.",
-        img: LemonDesert
+        img: LemonDesert,
+        alt: "Close up of our lemon desert"
     }
 ];
 
 function Highlights() {
     return (
-        <div className="Highlights">
+        <section id="highlights">
             <h1>This Weeks Specials!</h1>
             <button>Online Menu</button>
-            <section className="CardSection">
+            <section id="card-section">
                 {currentSpecials.map((item) => {
-                    return (<ItemCard name={item.name} price={item.price} description={item.description} img={item.img}/>)
+                    return (<ItemCard item={item}/>)
                 })}
             </section>
-        </div>
+        </section>
     )
 }
 

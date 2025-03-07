@@ -14,6 +14,7 @@
 
 #booking-form h2 {
     grid-column: 3/7;
+    grid-row: 2;
     margin-top: -20px;
 }
 
@@ -38,6 +39,7 @@ label[for="res-time"]{
     grid-column: 5/7;
     grid-row: 4;
     margin-bottom: 5px;
+    min-width: 130px;
 }
 
 #guests, label[for="guests"], #occasion, label[for="occasion"] {
@@ -62,17 +64,17 @@ label[for="occasion"]{
     grid-row: 9;
 }
 
-input[role="submit"]{
+input[type="submit"]{
     grid-column: 3/5;
     grid-row: 10;
 }
 
-input[role="submit"]:disabled {
+input[type="submit"]:disabled {
     background-color: gray;
     color:darkgray;
 }
 
-input[role="submit"]:disabled:hover {
+input[type="submit"]:disabled:hover {
     border: gray;
     color:darkgray;
     cursor: not-allowed;
@@ -103,4 +105,65 @@ form p {
     grid-column: 5/7;
     grid-row: 5;
     height: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    #booking-form * {
+        grid-column: 3/11;
+    }
+
+    label[for="res-date"]{
+        grid-row: 3;
+    }
+
+    #res-date {
+        grid-row: 4;
+        margin-bottom: 25px;
+    }
+
+    label[for="res-time"]{
+        grid-row: 5;
+    }
+
+    #res-time {
+        grid-row: 6;
+    }
+
+    label[for="guests"] {
+        grid-row: 7;
+    }
+
+    #guests {
+        grid-row: 8;
+    }
+
+    label[for="occasion"]{
+        grid-row: 9;
+    }
+
+    #occasion {
+        grid-row: 10;
+    }
+
+    input[type="submit"]{
+        grid-row: 11;
+        width: 55%;
+        justify-self: center;
+    }
+
+    #date-error {
+        grid-row: 4;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    #time-error {
+        grid-row: 6;
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+
+    form img {
+        display: none;
+    }
 }

@@ -29,16 +29,16 @@ var testimonialData = [
 
 function Testimonials() {
     return (
-        <div className="Testimonials">
+        <section id="testimonials">
             <h1>Testimonials</h1>
             <section>
                 {testimonialData.map((testimonial) => {
                     return (
-                        <TestimonialCard name={testimonial.name} rating={testimonial.rating} quote={testimonial.quote} image={testimonial.image}/>
+                        <TestimonialCard testimonial={testimonial}/>
                     )
                 })}
             </section>
-        </div>
+        </section>
     )
 }
 

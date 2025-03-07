@@ -33,7 +33,7 @@ function BookingForm(props) {
                 handleError("date-error", "");
                 props.dispatchAvailableTimes(value);
             }
-        } else if (name == "res-time"){
+        } else if (name === "res-time"){
             if(value === "--select--"){
                 handleError("res-time-error", "Please select an option");
             } else {
@@ -73,13 +73,13 @@ function BookingForm(props) {
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input type="submit" value="Reserve Table" role="submit" disabled={
+            <input type="submit" value="Reserve Table" name="submit" disabled={
                 !(fieldErrors['date-error'] === ""
                 && fieldErrors['res-time-error'] === ""
                 && fieldErrors['guests-error'] === ""
                 && fieldErrors['occasion-error'] === ""
-                )}/>
-            <img src={logo}/>
+                )} aria-label="submit form"/>
+            <img src={logo} alt="Little lemon logo in white"/>
         </form>
     )
 }

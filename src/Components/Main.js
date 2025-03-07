@@ -16,7 +16,7 @@ function Main() {
     const submitForm = (formData) => {submitAPI(formData) ? navigate("/confirmation") : console.log("failed submission")};
 
     return (
-        <main className="Main">
+        <main>
             <Routes>
                 <Route path="/" element={<Homepage/>}/>
                 <>

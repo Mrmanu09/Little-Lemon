@@ -4,7 +4,7 @@ import Logo from '../Assets/Asset 20@4x.png';
 
 function Footer() {
     return (
-        <footer className="Footer">
+        <footer>
             <hr/>
             <img src={Logo} alt="Little Lemon logo"/>
             <ul id="doormat-nav">
@@ -17,12 +17,12 @@ function Footer() {
                 <li><a>Login</a></li>
             </ul>
             <ul id="contact-links">
-                <li><h3 className="Section-Title">Contact</h3></li>
+                <li><h3>Contact</h3></li>
                 <li><a>Phone Number</a></li>
                 <li><a>Email</a></li>
             </ul>
             <ul id="social-links">
-                <li><h3 className="Section-Title">Social Media Links</h3></li>
+                <li><h3>Social Media Links</h3></li>
                 <li><a>Facebook</a></li>
                 <li><a>Instagram</a></li>
                 <li><a>X</a></li>

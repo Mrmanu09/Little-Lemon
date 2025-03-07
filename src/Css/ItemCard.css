@@ -1,4 +1,4 @@
-.Item-Card {
+.item-card {
     width: 264px;
     height: 476px;
     display: grid;
@@ -8,7 +8,7 @@
     border-radius: 16px 16px 0 0;
 }
 
-.Item-Card img {
+.item-card img {
     width: 264px;
     height: 186px;
     grid-row: 1;
@@ -17,7 +17,7 @@
     border-radius: 16px 16px 0 0;
 }
 
-.Item-Details {
+.item-details {
     height: 100%;
     grid-row: 2;
     display: grid;
@@ -26,22 +26,22 @@
     padding: 0 20px;
 }
 
-.Item-Details span {
+.item-details span {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Item-Details span:first-of-type {
+.item-details span:first-of-type {
     align-self: start;
 }
 
-.Item-Details span:first-of-type h3:last-of-type {
+.item-details span:first-of-type h3:last-of-type {
     color: #FF7700;
     text-align: right;
 }
 
-.Item-Details .Card-Text {
+.item-details .card-text {
     margin-top: 0;
     align-self: baseline;
 }
