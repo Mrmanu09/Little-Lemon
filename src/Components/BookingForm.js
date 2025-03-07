@@ -4,6 +4,7 @@ import logo from '../Assets/Asset 9@4x.png';
 import '../Css/BookingForm.css';
 
 function BookingForm(props) {
+    //data about users reservation
     const [fieldData, setFieldData] = useState({
         date: "",
         "res-time": "--select--",
@@ -11,6 +12,7 @@ function BookingForm(props) {
         occasion: ""
     })
 
+    //data about the invalid data errors in the form
     const [fieldErrors, setFieldErrors] = useState({
         "date-error": "",
         "res-time-error": "",
@@ -21,22 +23,27 @@ function BookingForm(props) {
     const handleError = (name, value) => {setFieldErrors(prevErrors => ({...prevErrors, [name] : value}))}
 
     const handleChange = e => {
+        //on any form field change, update form data and detect errors in input
         const name = e.target.name;
         const value = e.target.value;
         if (name === "date") {
+            //deny chosen date if it is from a date that has passed
             const invalidDateThresh = new Date()
             invalidDateThresh.setDate(invalidDateThresh.getDate()-2)
             if(new Date(value) < invalidDateThresh){
                 handleError("date-error", "Can not book for a date that has passed");
             }
             else{
+                //no error found
                 handleError("date-error", "");
                 props.dispatchAvailableTimes(value);
             }
         } else if (name === "res-time"){
             if(value === "--select--"){
+                //deny chosen time if the option chosen is the placeholder option which reads --select--
                 handleError("res-time-error", "Please select an option");
             } else {
+                //no error found
                 handleError("res-time-error", "");
             }
         }
@@ -46,6 +53,7 @@ function BookingForm(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
+        //deny form submission if user has no selected an option for reservation time
         if (fieldData["res-time"] === "--select--"){
             handleError("res-time-error", "Please select an option");
             return;
