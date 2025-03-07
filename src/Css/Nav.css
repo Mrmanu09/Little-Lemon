@@ -26,3 +26,20 @@ nav ul {
 .nav-link:visited {
     color: black;
 }
+
+@media only screen and (max-width: 1200px) {
+    nav ul {
+        gap: 1vw;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    nav {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+}

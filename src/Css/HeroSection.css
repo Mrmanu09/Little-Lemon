@@ -34,6 +34,10 @@
 
 #hero-section img {
     grid-column: 8/11;
+    width: 100%;
+    max-width: 330px;
+    justify-self: center;
+    object-fit: cover;
     grid-row: 2;
     justify-self: end;
     border-radius: 16px;

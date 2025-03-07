@@ -29,3 +29,9 @@
     justify-content: space-around;
     flex-wrap: nowrap;
 }
+
+@media only screen and (max-width: 930px) {
+    #highlights .item-card:last-of-type{
+        display: none;
+    }
+}
