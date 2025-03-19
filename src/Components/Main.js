@@ -22,8 +22,8 @@ function Main() {
             <Routes>
                 <Route path="/" element={<Homepage/>}/>
                 <>
-                    <Route path="booking" element ={<BookingPage availableTimes={availableTimes} dispatchAvailableTimes={dispatchAvailableTimes} submitForm={submitForm}/>}/>
-                    <Route path ="confirmation" element={<ConfirmedBooking/>}/>
+                    <Route path="/booking" element ={<BookingPage availableTimes={availableTimes} dispatchAvailableTimes={dispatchAvailableTimes} submitForm={submitForm}/>}/>
+                    <Route path="/confirmation" element={<ConfirmedBooking/>}/>
                 </>
             </Routes>
         </main>

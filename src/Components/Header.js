@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from 'react-router-dom';
 
 import '../Css/Header.css'
 import Nav from "./Nav";
@@ -23,7 +24,7 @@ function Header() {
 
     return (
         <header ref={headerBox}>
-            <img alt="Little Lemon Logo" src={logo} width="193.04px" height="54px"/>
+            <Link to="/" id="header-img"><img alt="Little Lemon Logo" src={logo} width="193.04px" height="54px"/></Link>
             <Nav/>
         </header>
     )

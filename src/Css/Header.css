@@ -17,12 +17,12 @@ header{
     border-bottom: black solid 1px;
 }
 
-header img {
+#header-img {
     grid-column: 3/5;
 }
 
 @media only screen and (max-width: 930px) {
-    header img {
+    #header-img {
         grid-row: 1;
         grid-column: 1/-1;
         justify-self: center;
