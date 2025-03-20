@@ -48,7 +48,7 @@ I then created a high fidelity prototype built off my low fidelity wireframe. Us
 
 <img src="https://github.com/user-attachments/assets/fbdc1a35-b30f-4c94-9cd5-46f0fcd0c070" width=1000px>
 
-# The Final Build
+# Final Build
 The final build followed the high fidelity prototype. In order to better meet the project scope, the amount of pages in the reservation system were reduced. This reduction also helped condense and only require the form inputs neccessary.
 </br>
 **The full build can be visited here on GitHub Pages:** https://camilomedel.github.io/LittleLemon-Capstone/#/
