@@ -10,4 +10,4 @@ The Little Lemon Restaurant was in need for a new website with a table reservati
 
 The final build followed the high fidelity prototype. In order to better meet the project scope, the amount of pages in the reservation system were reduced. This reduction also helped condense and only require the form inputs neccessary.
 </br>
-**The full build can be visited here on GitHub Pages:** https://camilomedel.github.io/LittleLemon-Capstone/#/
+
