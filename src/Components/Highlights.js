@@ -10,24 +10,24 @@ var currentSpecials = [
     {
         name: "Greek Salad",
         price: "$12.99",
-        description: "In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue. \
-        Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.",
+        description: `In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue.
+        Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.`,
         img: GreekSalad,
         alt: "Close up of our greek salad"
     },
     {
         name: "Bruchetta",
         price: "$5.99",
-        description: "In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue. \
-        Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.",
+        description: `In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue.
+        Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.`,
         img: Bruchetta,
         alt: "Our bruchetta served on a plate"
     },
     {
         name: "Lemon Dessert",
         price: "$5.00",
-        description: "In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue. \
-        Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.",
+        description: `In massa tempor nec feugiat nisl. Tempor orci dapibus ultrices in iaculis nunc sed augue.
+        Nec nam aliquam sem et tortor consequat id porta. Auctor urna nunc id cursus metus aliquam.`,
         img: LemonDesert,
         alt: "Close up of our lemon desert"
     }
