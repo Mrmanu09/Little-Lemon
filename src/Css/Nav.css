@@ -11,6 +11,8 @@ nav ul {
     font-size: 18px;
     text-wrap: nowrap;
     justify-content: end;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
 }
 
 .nav-link {
